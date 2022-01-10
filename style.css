@@ -48,19 +48,18 @@ header {
 }
 
 .books-container {
-  position: absolute;
-  display: grid;
-  width: 100%;
-  height: 100%;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
   color: #84c68c;
+  flex-wrap: wrap;
 }
 
-.card {
+.book {
+  flex-basis: 25%;
+  margin: 3em;
   width: 60%;
-  height: 80%;
+  height: 100%;
   max-height: 300px;
   padding: 10px;
   text-align: center;
@@ -70,18 +69,18 @@ header {
   box-shadow: 25px 25px 50px #004208;
 }
 
-.card-header {
+.book-header {
   text-transform: uppercase;
   font-size: 20px;
   margin: 20px auto;
 }
 
-.card-buttons-container {
+.book-buttons-container {
   display: flex;
   flex-direction: column;
 }
 
-.card-button {
+.book-button {
   padding: 0.6em;
   border-radius: 50px;
   font-weight: bold;
