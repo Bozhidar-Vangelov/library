@@ -16,7 +16,7 @@
     </header>
     <main>
         <div class="add-new-container">
-            <button class="add-new">Add new book</button>
+            <button class="add-new" id="add-new">Add new book</button>
         </div>
         <div class="books-container">
             <div class="book">
@@ -46,27 +46,81 @@
                     <button class="book-button delete">Delete</button>
                 </div>
             </div>
+            <div class="book">
+                <h3 class="book-header">The Catcher in the Rye</h3>
+                <p class="book-info">Author:</p>
+                <p class="book-info">Amy Tan.</p>
+                <div class="book-buttons-container">
+                    <button class="book-button mark">Mark as read</button>
+                    <button class="book-button delete">Delete</button>
+                </div>
+            </div>
+            <div class="book">
+                <h3 class="book-header">The Catcher in the Rye</h3>
+                <p class="book-info">Author:</p>
+                <p class="book-info">Amy Tan.</p>
+                <div class="book-buttons-container">
+                    <button class="book-button mark">Mark as read</button>
+                    <button class="book-button delete">Delete</button>
+                </div>
+            </div>
+            <div class="book">
+                <h3 class="book-header">The Catcher in the Rye</h3>
+                <p class="book-info">Author:</p>
+                <p class="book-info">Amy Tan.</p>
+                <div class="book-buttons-container">
+                    <button class="book-button mark">Mark as read</button>
+                    <button class="book-button delete">Delete</button>
+                </div>
+            </div>
+            <div class="book">
+                <h3 class="book-header">The Catcher in the Rye</h3>
+                <p class="book-info">Author:</p>
+                <p class="book-info">Amy Tan.</p>
+                <div class="book-buttons-container">
+                    <button class="book-button mark">Mark as read</button>
+                    <button class="book-button delete">Delete</button>
+                </div>
+            </div>
+            <div class="book">
+                <h3 class="book-header">The Catcher in the Rye</h3>
+                <p class="book-info">Author:</p>
+                <p class="book-info">Amy Tan.</p>
+                <div class="book-buttons-container">
+                    <button class="book-button mark">Mark as read</button>
+                    <button class="book-button delete">Delete</button>
+                </div>
+            </div>
+            <div class="book">
+                <h3 class="book-header">The Catcher in the Rye</h3>
+                <p class="book-info">Author:</p>
+                <p class="book-info">Amy Tan.</p>
+                <div class="book-buttons-container">
+                    <button class="book-button mark">Mark as read</button>
+                    <button class="book-button delete">Delete</button>
+                </div>
+            </div>
         </div>
     </main>
-    <div class="modal">
+    <div class="modal" id="modal">
         <form class="add-new-form">
             <h3>Add new book</h3>
             <label for="title">
                 Title
             </label>
-            <input type="text" name="title">
+            <input type="text" class="modal-input" name="title">
             <label for="author">
                 Author
             </label>
-            <input type="text" name="author">
+            <input type="text" class="modal-input" name="author">
             <label for="pages">
                 Pages
             </label>
-            <input type="text" name="pages">
+            <input type="text" class="modal-input" name="pages">
             <label for="is-read">
                 Have you read it?
+                <input type="checkbox" id="checkbox">
             </label>
-            <input type="checkbox">
             <button class="add-book-button">Add book</button>
         </form>
     </div>
