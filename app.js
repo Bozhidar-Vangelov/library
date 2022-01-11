@@ -28,6 +28,7 @@ function getBook() {
 function createNewBook(bookData) {
   let book = document.createElement('div');
   book.classList.add('book');
+  book.title = bookData.title;
 
   let bookHeading = document.createElement('h3');
   bookHeading.classList.add('book-header');
@@ -68,6 +69,13 @@ function createNewBook(bookData) {
   let bookDeleteButton = document.createElement('button');
   bookDeleteButton.classList.add('book-button', 'delete');
   bookDeleteButton.textContent = 'Delete';
+
+  bookDeleteButton.addEventListener('click', (e) => {
+    myLibrary = myLibrary.filter(
+      (currentBook) => currentBook.title !== book.title
+    );
+    e.target.parentElement.parentElement.remove();
+  });
 
   bookButtonsContainer.appendChild(bookIsReadButton);
   bookButtonsContainer.appendChild(bookDeleteButton);
