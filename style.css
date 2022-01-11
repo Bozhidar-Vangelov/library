@@ -116,6 +116,7 @@ h3 {
 }
 
 .add-new-form {
+  z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -158,4 +159,13 @@ label {
 
 #checkbox {
   background-color: brown;
+}
+
+.overlay {
+  position: fixed;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

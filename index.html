@@ -103,7 +103,7 @@
         </div>
     </main>
     <div class="modal" id="modal">
-        <form class="add-new-form">
+        <form class="add-new-form" id="form">
             <h3>Add new book</h3>
             <label for="title">
                 Title
@@ -119,10 +119,11 @@
             <input type="text" class="modal-input" name="pages">
             <label for="is-read">
                 Have you read it?
-                <input type="checkbox" id="checkbox">
+                <input type="checkbox" id="checkbox" name="checkbox">
             </label>
-            <button class="add-book-button">Add book</button>
+            <button class="add-book-button" id="add-book">Add book</button>
         </form>
+        <div class="overlay" id="overlay"></div>
     </div>
 </body>
 
