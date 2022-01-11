@@ -53,6 +53,18 @@ function createNewBook(bookData) {
     bookIsReadButton.textContent = 'Mark as unread';
   }
 
+  bookIsReadButton.addEventListener('click', (e) => {
+    let button = e.target;
+
+    if (button.classList.contains('mark-unread')) {
+      button.classList.replace('mark-unread', 'mark-read');
+      button.textContent = 'Mark as read';
+    } else {
+      button.classList.replace('mark-read', 'mark-unread');
+      button.textContent = 'Mark as unread';
+    }
+  });
+
   let bookDeleteButton = document.createElement('button');
   bookDeleteButton.classList.add('book-button', 'delete');
   bookDeleteButton.textContent = 'Delete';
