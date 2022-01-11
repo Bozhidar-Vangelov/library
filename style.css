@@ -92,16 +92,28 @@ h3 {
   cursor: pointer;
 }
 
-.mark {
+.mark-read {
   margin: 1em 0em 2em 0em;
   border: 0.3em solid #7d7a13;
   background: #fcfaa5;
   color: #aaa739;
 }
 
-.mark:hover {
+.mark-read:hover {
   background: #7d7a13;
   color: #fcfaa5;
+}
+
+.mark-unread {
+  margin: 1em 0em 2em 0em;
+  border: 0.3em solid #0e5a2a;
+  background: #84c68c;
+  color: #10631a;
+}
+
+.mark-unread:hover {
+  background: #0e5a2a;
+  color: #84c68c;
 }
 
 .delete {
