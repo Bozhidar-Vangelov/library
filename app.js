@@ -13,5 +13,17 @@ function Book(title, author, pages, isRead) {
     `${this.title} by ${this.author}, ${this.pages} pages, ${this.isRead}`;
 }
 
+function addBookToLibrary(e) {
+  e.preventDefault();
+
+  let formData = new FormData(form);
+
+  let title = formData.get('title');
+  let author = formData.get('author');
+  let pages = formData.get('pages');
+  let isRead = formData.get('checkbox');
+}
+
 addNewBook.addEventListener('click', () => (modal.style.display = 'block'));
 overlay.addEventListener('click', () => (modal.style.display = 'none'));
+addBook.addEventListener('click', addBookToLibrary);
