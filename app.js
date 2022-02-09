@@ -51,11 +51,11 @@ function createNewBook(bookData) {
   bookIsReadButton.id = 'mark';
 
   if (bookData.isRead) {
-    bookIsReadButton.classList.add('book-button', 'mark-read');
-    bookIsReadButton.textContent = 'Mark as read';
-  } else {
     bookIsReadButton.classList.add('book-button', 'mark-unread');
     bookIsReadButton.textContent = 'Mark as unread';
+  } else {
+    bookIsReadButton.classList.add('book-button', 'mark-read');
+    bookIsReadButton.textContent = 'Mark as read';
   }
 
   bookIsReadButton.addEventListener('click', (e) => {
