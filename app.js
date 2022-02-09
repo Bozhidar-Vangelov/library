@@ -7,13 +7,17 @@ const addBook = document.getElementById('add-book');
 
 let myLibrary = [];
 
-function Book(title, author, pages, isRead) {
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  this.isRead = isRead;
-  this.info = () =>
+class Book {
+  constructor(title, author, pages, isRead) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.isRead = isRead;
+  }
+
+  info() {
     `${this.title} by ${this.author}, ${this.pages} pages, ${this.isRead}`;
+  }
 }
 
 function getBook() {
